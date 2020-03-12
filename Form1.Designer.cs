@@ -33,12 +33,14 @@
             this.comboDevice = new System.Windows.Forms.ComboBox();
             this.labelDevice = new System.Windows.Forms.Label();
             this.pictureWebCam = new System.Windows.Forms.PictureBox();
+            this.capture = new System.Windows.Forms.Button();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWebCam)).BeginInit();
             this.SuspendLayout();
             // 
             // panelButton
             // 
+            this.panelButton.Controls.Add(this.capture);
             this.panelButton.Controls.Add(this.detect);
             this.panelButton.Location = new System.Drawing.Point(641, 68);
             this.panelButton.Name = "panelButton";
@@ -51,7 +53,7 @@
             this.detect.Name = "detect";
             this.detect.Size = new System.Drawing.Size(108, 23);
             this.detect.TabIndex = 0;
-            this.detect.Text = "Capturar";
+            this.detect.Text = "&Detectar";
             this.detect.UseVisualStyleBackColor = true;
             this.detect.Click += new System.EventHandler(this.Detect_Click);
             // 
@@ -81,6 +83,16 @@
             this.pictureWebCam.TabIndex = 3;
             this.pictureWebCam.TabStop = false;
             // 
+            // capture
+            // 
+            this.capture.Location = new System.Drawing.Point(0, 29);
+            this.capture.Name = "capture";
+            this.capture.Size = new System.Drawing.Size(108, 23);
+            this.capture.TabIndex = 1;
+            this.capture.Text = "&Capturar";
+            this.capture.UseVisualStyleBackColor = true;
+            this.capture.Click += new System.EventHandler(this.Capture_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,6 +121,7 @@
         private System.Windows.Forms.ComboBox comboDevice;
         private System.Windows.Forms.Label labelDevice;
         private System.Windows.Forms.PictureBox pictureWebCam;
+        private System.Windows.Forms.Button capture;
     }
 }
 
